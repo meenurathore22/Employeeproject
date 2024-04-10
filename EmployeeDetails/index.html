@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            width: 1500px;
+            height: 1500px;
+        }
+        .box1{
+            width: 400px;
+            height: 1000px;
+        }
+        .box2{
+            width: 1100px;
+            height: 1000px;
+            
+        }
+        h1{
+            margin-left: 600px;
+            color: blueviolet;
+        }
+        th{
+            border: 5px solid rgb(238, 234, 234);
+            padding: 5px;
+            width: 1000px;
+            background-color: aquamarine;
+           
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Employee Records</h1>
+    <div class="main">
+        <div class="box1">
+            <form>
+                <label>Employee Name</label>
+                <br>
+                <input type="text" placeholder="Enter Employee Name" id="name">
+                <br><br>
+
+                <label>Employee ID</label>
+                <br>
+                <input type="number" placeholder="Enter Employee ID" id="ID">
+                <br><br>
+
+                <label> Department</label><br>
+                <select id="select">
+                    <option value="frontend">frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="FullStack">FullStack</option>
+                    <option value="HR">HR</option>
+                </select>
+                <br><br>
+
+
+                <label>Experience</label>
+                <br>
+                <input type="number" placeholder="Experience in years" id="experience">
+                <br><br>
+
+                <label>Email Address</label>
+                <br>
+                <input type="text" placeholder="Enter Email Address" id="email">
+                <br><br>
+
+                <label>Mobile Number</label>
+                <br>
+                <input type="number" placeholder="Enter Mobile Number" id="number">
+                <br><br>
+
+                <input type="submit" id="button">
+            </form>
+        </div>
+
+        <div class="box2">
+            <table>
+             <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Experience in year</th>
+                    <th>Email address</th>
+                    <th>Mobile Number</th>
+                    <th>Role</th>
+                    <th>Delete</th>
+                    </tr>
+             </thead>
+             <tbody>
+                
+             </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./index.js"></script>
